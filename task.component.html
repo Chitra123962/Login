@@ -1,0 +1,16 @@
+<input type="search" placeholder="search here.......">&nbsp;&nbsp;
+<button>Submit</button>&nbsp;&nbsp;
+<button [routerLink]="['/create']">Create List</button>
+<table>
+  <tr>  <th>User Id</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Completed</th>
+    </tr>
+    <tr *ngFor="let b of total">
+        <td>{{b.userId}}</td>
+        <td>{{b.id}}</td>
+        <td>{{b.title}}</td>
+        <td>{{b.completed}}</td>
+    </tr>
+</table>

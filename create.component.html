@@ -1,0 +1,11 @@
+<div align="center">
+        <h1>Login Form</h1>
+        <form [formGroup]="trip">
+            User Id:<input type="text" formControlName="userid" ><br><br>
+            Id:<input type="text" formControlName="id"><br><br>
+            Title:<input type="text" formControlName="title" ><br><br>
+            Completed:<input type="text" formControlName="completed" ><br><br>
+            <button (click)="add1(trip)" [routerLink]="['/dashboard']" >Save</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </form>
+        </div>
